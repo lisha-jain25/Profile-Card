@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Form</title>
+</head>
+<body>
+    <!-- header -->
+     <header>
+         <h1><center><u>Job Application Form</u></center></h1>
+     <marquee behavior="" direction="Right">Welcome to the Job Application Form!</marquee>
+     </header>
+
+     <!-- from -->
+      <main>
+        <form>
+            <style>
+                fieldset
+                {
+                    background-color: rgb(153, 215, 230);
+                    width: 50%;
+                    margin: auto;
+                }
+            </style>
+            <fieldset>
+                <legend>Personal Information</legend><br>
+                <label for="Name">First Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Enter your name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@example.com" required><br><br>
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="123-456-7890" required><br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Gender Information</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+            </fieldset>
+            <br>
+            <!-- skills -->
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label> 
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="js">
+                <label for="js">JavaScript</label> 
+            </fieldset>
+            <br>
+            <!-- experience -->
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Years of Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">--Select--</option>
+                    <option value="0-1">0-1 years</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3+">3+ years</option>
+                </select><br>
+            </fieldset>
+            <br>
+            <!-- address -->
+            <fieldset>
+                <legend>Address</legend>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here..." required></textarea><br>
+            </fieldset>
+            <br>
+            <!-- location -->
+             <fieldset>
+                <legend>Preferred Job Location</legend>
+                <label for="location">Location:</label>
+                <select id="location" name="location" required>
+                    <option value="">--Select--</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="remote">Remote</option>
+                </select><br>
+             </fieldset>
+             <br>
+             <!-- resume -->
+             <fieldset>
+                <legend>Resume</legend>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" maxlength="10MB" required>
+             </fieldset>
+             <br>
+             <!-- submit button -->
+            <center><input type="submit" style="background-color: chartreuse;" value="Submit"></center><br>
+             <!-- reset button -->
+            <center><input type="reset" style="background-color: red;" value="Reset"></center>
+        </form>
+      </main>
+</body>
+</html>
